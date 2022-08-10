@@ -25,6 +25,12 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 
+" If you have vim >=8.0 or Neovim >= 0.1.5
+if (has("termguicolors"))
+ set termguicolors
+endif	
+
+
 " ******* Función para que el documentos se abra donde estabá editando *******
 autocmd BufReadPost *
    \ if line("'\"") > 0 && line("'\"") <= line("$") |
@@ -50,9 +56,12 @@ call plug#begin('~/.config/vim/autoload/plugged')
 Plug 'preservim/nerdcommenter' " nerdcommenter es para comentar código
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'} "autocomletado Conquer of Completions
+"Plug 'neoclide/coc.nvim', {'branch': 'release'} "autocomletado Conquer of Completions
+Plug 'zxqfl/tabnine-vim'
+Plug 'Valloric/YouCompleteMe'
 Plug 'sheerun/vim-polyglot' "Resaltado de sintaxis
 Plug 'sainnhe/sonokai' " tema de Nuevo
+Plug 'ghifarit53/tokyonight-vim' " tema nuevo
 Plug 'sainnhe/everforest' " tema everforest
 Plug 'crusoexia/vim-monokai' " Tema monokai, bueno para trabajar con html
 Plug 'phanviet/vim-monokai-pro' " Tema monokai-pro
@@ -100,18 +109,20 @@ source ~/.config/nvim/local_bundles.vim
 endif
 call plug#end()
 
+"source $HOME/.config/vim/plug-config/coc.vim
 source $HOME/.config/vim/general/settings.vim
 source $HOME/.config/vim/keymapping/keys.vim
-source $HOME/.config/vim/plug-config/coc.vim
-source $HOME/.config/vim/plug-config/vim-session.vim
+source $HOME/.config/vim/plug-config/easymotion.vim
 source $HOME/.config/vim/plug-config/emmet.vim
-source $HOME/.config/vim/plug-config/showMarks.vim
 source $HOME/.config/vim/plug-config/fzf.vim
-source $HOME/.config/vim/plug-config/nerdtree.vim
 source $HOME/.config/vim/plug-config/gruvbox.vim
+source $HOME/.config/vim/plug-config/lightline.vim
 source $HOME/.config/vim/plug-config/material.vim
 source $HOME/.config/vim/plug-config/monokai.vim
-source $HOME/.config/vim/plug-config/easymotion.vim
 source $HOME/.config/vim/plug-config/nerdcommenter.vim
-source $HOME/.config/vim/plug-config/lightline.vim
+source $HOME/.config/vim/plug-config/nerdtree.vim
+source $HOME/.config/vim/plug-config/showMarks.vim
+"source $HOME/.config/vim/plug-config/tokyonight-vim.vim
+source $HOME/.config/vim/plug-config/vim-session.vim
+source $HOME/.config/vim/plug-config/youcompleteme.vim
 

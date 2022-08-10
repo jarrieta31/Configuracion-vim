@@ -1,18 +1,21 @@
-
 "*****************************************************************************
 "" Basic Setup
 "*****************************************************************************"
+"activar resaltado para vim-go 
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+
 set title  " Muestra el nombre del archivo en la ventana de la terminal
 set tabstop=4 " indica cuántos espacios tiene una tabulación. Por defecto 8, yo suelo bajarlo a 4
 set expandtab " convierte las tabulaciones a espacios. El nº de espacios será el definido en :set tabstop
 set shiftwidth=4 " indica el nº de espacios para una indentación
-"set mouse=a " con esta opción cuando copiemos desde la terminal deslizando el ratón por el texto del fichero no se copiarán los números de línea.
+set mouse=a " con esta opción cuando copiemos desde la terminal deslizando el ratón por el texto del fichero no se copiarán los números de línea.
 "set paste " nos servirá para hacer copy-paste en vim respetando tabulaciones y espacios del texto original.
 "set nowrap
 set t_Co=256
 "set guifont=Meslo\ LG\ S\ 9
-"set guifont=Monaco\ Regular\ 10
-set guifont=Monaco\ for\ Powerline:h12
+set guifont=Monaco\ Regular\ 10
+"set guifont=Monaco\ for\ Powerline:h12
 "set guifont=Mononoki\ Regular\ 10
 set clipboard=unnamedplus "Habilita el copiar al porta papeles
 "set clipboard=unnamed " Habilita el copiar al porta papeles
