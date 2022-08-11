@@ -56,9 +56,9 @@ call plug#begin('~/.config/vim/autoload/plugged')
 Plug 'preservim/nerdcommenter' " nerdcommenter es para comentar código
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-"Plug 'neoclide/coc.nvim', {'branch': 'release'} "autocomletado Conquer of Completions
+Plug 'neoclide/coc.nvim', {'branch': 'release'} "autocomletado Conquer of Completions
 Plug 'zxqfl/tabnine-vim'
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
 Plug 'sheerun/vim-polyglot' "Resaltado de sintaxis
 Plug 'sainnhe/sonokai' " tema de Nuevo
 Plug 'ghifarit53/tokyonight-vim' " tema nuevo
@@ -109,7 +109,7 @@ source ~/.config/nvim/local_bundles.vim
 endif
 call plug#end()
 
-"source $HOME/.config/vim/plug-config/coc.vim
+source $HOME/.config/vim/plug-config/coc.vim
 source $HOME/.config/vim/general/settings.vim
 source $HOME/.config/vim/keymapping/keys.vim
 source $HOME/.config/vim/plug-config/easymotion.vim
@@ -124,5 +124,5 @@ source $HOME/.config/vim/plug-config/nerdtree.vim
 source $HOME/.config/vim/plug-config/showMarks.vim
 "source $HOME/.config/vim/plug-config/tokyonight-vim.vim
 source $HOME/.config/vim/plug-config/vim-session.vim
-source $HOME/.config/vim/plug-config/youcompleteme.vim
+"source $HOME/.config/vim/plug-config/youcompleteme.vim
 
