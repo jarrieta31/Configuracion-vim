@@ -57,7 +57,7 @@ Plug 'preservim/nerdcommenter' " nerdcommenter es para comentar código
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'} "autocomletado Conquer of Completions
-Plug 'zxqfl/tabnine-vim'
+"Plug 'zxqfl/tabnine-vim'
 "Plug 'Valloric/YouCompleteMe'
 Plug 'sheerun/vim-polyglot' "Resaltado de sintaxis
 Plug 'sainnhe/sonokai' " tema de Nuevo
